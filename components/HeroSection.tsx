@@ -18,12 +18,6 @@ import {
    DONNÉES
 ═══════════════════════════════════════════ */
 
-const GAME_CHIPS = [
-  { label: "Loto 10", href: "#loto10-card" },
-  { label: "Loto 9", href: "#loto9-card" },
-  { label: "ZeBall", href: "#zeball-card" },
-];
-
 const TRUST_ITEMS = [
   { icon: <Lock size={16} strokeWidth={1.5} />, label: "Paiements sécurisés" },
   {
@@ -260,22 +254,6 @@ export default function HeroSection() {
             </span>
           </h1>
 
-          {/* Chips jeux */}
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: 8,
-              marginTop: 20,
-            }}
-          >
-            {GAME_CHIPS.map((c) => (
-              <Chip key={c.label} href={c.href}>
-                {c.label}
-              </Chip>
-            ))}
-          </div>
-
           {/* Sous-titre */}
           <p
             style={{
@@ -287,8 +265,8 @@ export default function HeroSection() {
               fontFamily: "var(--font-inter), sans-serif",
             }}
           >
-            Inscrivez-vous, rechargez facilement et tentez votre chance depuis
-            votre téléphone.
+            Inscrivez-vous, rechargez facilement et tentez votre chance où que
+            vous soyez.
           </p>
 
           {/* CTAs */}
@@ -334,7 +312,9 @@ export default function HeroSection() {
 
             {/* Bouton secondaire */}
             <a
-              href="#loto10-card"
+              href="https://iziloto.cm/"
+              target="_blank"
+              rel="noopener noreferrer"
               onMouseEnter={() => setBtnS(true)}
               onMouseLeave={() => setBtnS(false)}
               style={{
@@ -690,11 +670,13 @@ export default function HeroSection() {
                           fontFamily: "var(--font-inter), sans-serif",
                         }}
                       >
-                        Une expérience mobile fluide, pensée pour le Cameroun.
+                        Une expérience mobile fluide.
                       </div>
                     </div>
                     <a
-                      href="#loto10-card"
+                      href="https://iziloto.cm/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       onMouseEnter={() => setDiscover(true)}
                       onMouseLeave={() => setDiscover(false)}
                       style={{

@@ -426,7 +426,7 @@ function GameCard({ card }: { card: GameCard }) {
 
           {/* Jouer */}
           <a
-            href={card.jouerUrl}
+            href="https://iziloto.cm/"
             target="_blank"
             rel="noopener noreferrer"
             onMouseEnter={() => setPlayHovered(true)}

@@ -33,7 +33,7 @@ const WHY_CARDS: WhyCard[] = [
     id: 1,
     icon: <Trophy size={36} color="#951A80" strokeWidth={1.8} />,
     title: "Gains garantis",
-    text: "Ce que vous gagnez vous appartient. Paiements rapides et fiables à chaque tirage, petits ou grands.",
+    text: "Ce que vous gagnez vous appartient. Paiements rapides et fiables à chaque tirage.",
   },
   {
     id: 2,
@@ -63,7 +63,7 @@ const WHY_CARDS: WhyCard[] = [
     id: 6,
     icon: <Target size={36} color="#951A80" strokeWidth={1.8} />,
     title: "Jeu équitable & certifié",
-    text: "Rejoignez des milliers de Camerounais qui jouent en toute sérénité. La loterie telle qu'elle doit être.",
+    text: "Rejoignez des milliers de parieurs qui jouent en toute sérénité. La loterie telle qu'elle doit être.",
   },
 ];
 
