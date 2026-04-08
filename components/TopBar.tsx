@@ -1,19 +1,11 @@
 // components/TopBar.tsx
 "use client";
 
+import React from "react";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
+import Icon21Plus from "@/components/Icon21Plus";
 
-/* ═══════════════════════════════════════════
-   ICÔNE SVG 21+
-═══════════════════════════════════════════ */
-
-function Icon21Plus({ size = 20 }: { size?: number }) {}
-
-/* ═══════════════════════════════════════════
-   COMPOSANT TOPBAR
-═══════════════════════════════════════════ */
-
-export default function TopBar() {
+export default function TopBar(): React.ReactElement {
   const { isScrolled } = useScrollPosition();
 
   return (
@@ -31,19 +23,18 @@ export default function TopBar() {
         alignItems: "center",
         justifyContent: "center",
         gap: "8px",
-        // Disparition progressive au scroll
         opacity: isScrolled ? 0 : 1,
         transform: isScrolled ? "translateY(-100%)" : "translateY(0)",
         transition: "opacity 300ms ease, transform 300ms ease",
         pointerEvents: isScrolled ? "none" : "auto",
       }}
     >
-      <Icon21Plus size={20} />
+      <Icon21Plus size={20} color="white" />
       <span
         style={{
           color: "white",
           fontSize: "12px",
-          fontFamily: "Inter, sans-serif",
+          fontFamily: "var(--font-inter), sans-serif",
           letterSpacing: "0.03em",
           fontWeight: 400,
         }}
